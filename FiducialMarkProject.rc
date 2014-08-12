@@ -1,0 +1,835 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\FiducialMarkProject.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "\\res\\icon1.ico"
+IDR_FMLocatorTYPE       ICON                    "res\\FiducialMarkProjectDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_FIGURE_FIDUCIAL     BITMAP                  "res\\FiducialMark.bmp"
+IDB_BITMAP_FIDUCIAL     BITMAP                  "res\\bitmap1.bmp"
+IDB_BITMAP2             BITMAP                  "res\\bitmap2.bmp"
+IDB_BITMAP_FIDUCIAL2    BITMAP                  "res\\FiducialMark2.bmp"
+IDB_BITMAP3             BITMAP                  "res\\bitmap3.bmp"
+IDB_BITMAP_FIDUCIAL3    BITMAP                  "res\\FiducialMark3.bmp"
+IDB_BITMAP_AFFINE       BITMAP                  "res\\Affine.bmp"
+IDB_BITMAP_LOGO         BITMAP                  "res\\Logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About FiducialMarkProject...", ID_APP_ABOUT
+    END
+END
+
+IDR_FMLocatorTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Tem&plate Management",        32771
+        MENUITEM "&Options",                    ID_TOOLS_OPTIONS
+        MENUITEM "&Camera Calibration",         ID_TOOLS_CAMERACALIBRATION
+    END
+    POPUP "&Run"
+    BEGIN
+        POPUP "Image &Matching"
+        BEGIN
+            MENUITEM "&Cross Correlation",          ID_MATCHING_CROSSCORRELATION
+
+        END
+    END
+    POPUP "Re&sult"
+    BEGIN
+        MENUITEM "&Fiducial Mark Matching Positions", 
+                                                ID_RESULT_FIDUCIALMARKMATCHINGPOSITIONS
+
+        MENUITEM "Affine &Transformation",      ID_RESULT_AFFINETRANSFORMATION
+
+        MENUITEM "&RMSE",                       ID_RESULT_RMSE
+        MENUITEM "Process &Summary",            ID_RESULT_SUMMARY
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Fit Screen",                 ID_VIEW_FITSCREEN, CHECKED
+        MENUITEM "Full &Size",                  ID_VIEW_FULLSIZE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About FiducialMarkProject...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 224, 234
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "About Fiducial Mark Locator"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    RTEXT           "Application:",IDC_STATIC,23,115,51,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,87,211,50,16,WS_GROUP
+    CONTROL         144,IDC_STATIC,"Static",SS_BITMAP,59,7,100,93,
+                    WS_EX_STATICEDGE
+    LTEXT           "FiducialMarkProject ",IDC_STATIC,87,115,87,8,
+                    SS_NOPREFIX
+    RTEXT           "Version:",IDC_STATIC,23,128,51,8,SS_NOPREFIX
+    LTEXT           "1.0",IDC_STATIC,87,128,87,8,SS_NOPREFIX
+    RTEXT           "Release:",IDC_STATIC,23,141,51,8,SS_NOPREFIX
+    LTEXT           "May 2010",IDC_STATIC,87,141,87,8,SS_NOPREFIX
+    RTEXT           "Developer:",IDC_STATIC,23,154,51,8,SS_NOPREFIX
+    LTEXT           "The University of Seoul",IDC_STATIC,87,154,87,8,
+                    SS_NOPREFIX
+    LTEXT           "Department of Geoinformatics",IDC_STATIC,87,165,105,8,
+                    SS_NOPREFIX
+    LTEXT           "Lab for Sensor and Modeling",IDC_STATIC,87,176,105,8,
+                    SS_NOPREFIX
+    LTEXT           "Supannee Tanathong",IDC_STATIC,87,188,105,8,SS_NOPREFIX
+    GROUPBOX        "",IDC_STATIC,19,106,184,100
+END
+
+IDD_FORMTEMPLATE DIALOGEX 0, 0, 302, 357
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Template File",IDC_STATIC,15,14,59,10
+    EDITTEXT        IDC_TEMPLATE_EDIT,16,28,186,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE_BUTTON,204,28,72,15
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,61,68,166,132
+    LTEXT           "Preview",IDC_STATIC,15,56,59,10
+    PUSHBUTTON      "Start",IDC_START,70,216,66,14
+    PUSHBUTTON      "Cancel",IDC_CANCEL,149,216,66,14
+END
+
+IDD_TEMPLATE_DIALOG DIALOGEX 0, 0, 284, 244
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Template Management"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Load",IDC_LOAD,79,223,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,141,223,50,14
+    LTEXT           "Template File",IDC_STATIC,11,16,92,9
+    EDITTEXT        IDC_TEMPLATE_EDIT,11,30,190,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE_BUTTON,207,29,64,15
+    LTEXT           "Preview",IDC_STATIC,11,59,92,9
+    CONTROL         "",IDC_PREVIEW,"Static",SS_BITMAP | SS_CENTERIMAGE,48,73,
+                    184,143,WS_EX_STATICEDGE
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 272, 214
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,80,193,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,137,193,50,14
+    GROUPBOX        "System Setting",IDC_STATIC,11,10,252,96
+    CONTROL         "Enable grayscale processing",IDC_CHECK_GRAYSCALE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,28,166,14
+    LTEXT           "Both template and based image will be converted to grayscale and the processing will be performed based on grayscale images.",
+                    IDC_STATIC,36,44,225,29
+    CONTROL         "Enable subpixel accuracy",IDC_CHECK_SUBPIXEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,70,166,14
+    LTEXT           "The processing results are subpixel accurate.",
+                    IDC_STATIC,35,86,225,14
+    GROUPBOX        "Search Space",IDC_STATIC,11,108,252,72,WS_GROUP
+    CONTROL         "Likelihood Area",IDC_RADIO_LIKELIHOOD,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,24,129,75,10
+    CONTROL         "Entire Image",IDC_RADIO_ENTIRE,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,162,130,75,10
+    LTEXT           "Limit searching at 8 possible areas.",IDC_STATIC,35,144,
+                    119,9
+    EDITTEXT        IDC_PERCENT_COVERAGE,91,155,26,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    LTEXT           "Coverage (%):",IDC_STATIC,35,157,51,9
+    LTEXT           "(1%~99%)",IDC_STATIC,123,157,41,9
+END
+
+IDD_DLG_RESULT_MATCHING_POSITION DIALOGEX 0, 0, 643, 393
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Result - Fiducial Mark Matching Positions"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,527,372,50,14
+    GROUPBOX        "",IDC_STATIC,6,3,446,383
+    CONTROL         "",IDC_MARK1,"Static",SS_BITMAP | SS_CENTERIMAGE,9,9,139,
+                    116,WS_EX_STATICEDGE
+    CONTROL         "",IDC_MARK2,"Static",SS_BITMAP | SS_CENTERIMAGE,159,9,
+                    139,116,WS_EX_STATICEDGE
+    CONTROL         "",IDC_MARK3,"Static",SS_BITMAP | SS_CENTERIMAGE,309,9,
+                    139,116,WS_EX_STATICEDGE
+    CONTROL         "",IDC_MARK4,"Static",SS_BITMAP | SS_CENTERIMAGE,9,138,
+                    139,116,WS_EX_STATICEDGE
+    CONTROL         "",IDC_MARK5,"Static",SS_BITMAP | SS_CENTERIMAGE,309,138,
+                    139,116,WS_EX_STATICEDGE
+    CONTROL         "",IDC_MARK6,"Static",SS_BITMAP | SS_CENTERIMAGE,9,266,
+                    139,116,WS_EX_STATICEDGE
+    CONTROL         "",IDC_MARK7,"Static",SS_BITMAP | SS_CENTERIMAGE,159,266,
+                    139,116,WS_EX_STATICEDGE
+    CONTROL         "",IDC_MARK8,"Static",SS_BITMAP | SS_CENTERIMAGE,309,266,
+                    139,116,WS_EX_STATICEDGE
+    CONTROL         133,IDC_STATIC_FIDUCIAL,"Static",SS_BITMAP | 
+                    SS_CENTERIMAGE | SS_REALSIZEIMAGE,479,16,135,135,
+                    WS_EX_STATICEDGE
+    LTEXT           "Fiducial Mark Matching Positions",IDC_STATIC,495,171,
+                    113,15
+    LTEXT           "1.",IDC_STATIC,465,210,10,15
+    EDITTEXT        IDC_P1_X,479,207,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P1_Y,528,207,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P1_CCC,577,207,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "2.",IDC_STATIC,465,229,10,15
+    EDITTEXT        IDC_P2_X,479,225,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P2_Y,528,225,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P2_CCC,577,225,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "3.",IDC_STATIC,465,247,10,15
+    EDITTEXT        IDC_P3_X,479,244,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P3_Y,528,244,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P3_CCC,577,244,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "4.",IDC_STATIC,465,265,10,15
+    EDITTEXT        IDC_P4_X,479,262,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P4_Y,528,262,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P4_CCC,577,262,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "5.",IDC_STATIC,465,283,10,15
+    EDITTEXT        IDC_P5_X,479,280,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P5_Y,528,280,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P5_CCC,577,280,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "6.",IDC_STATIC,465,301,10,15
+    EDITTEXT        IDC_P6_X,479,298,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P6_Y,528,298,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P6_CCC,577,298,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "7.",IDC_STATIC,465,320,10,15
+    EDITTEXT        IDC_P7_X,479,317,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P7_Y,529,317,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P7_CCC,577,317,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "8.",IDC_STATIC,465,338,10,15
+    EDITTEXT        IDC_P8_X,479,335,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P8_Y,529,335,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_P8_CCC,577,335,43,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    GROUPBOX        "",IDC_STATIC,458,162,174,196
+    GROUPBOX        "",IDC_STATIC,458,162,174,24
+    LTEXT           "FD",IDC_STATIC,464,191,11,9
+    CTEXT           "X (pixel)",IDC_STATIC,478,191,47,9
+    CTEXT           "Y (pixel)",IDC_STATIC,527,191,47,9
+    CTEXT           "CCC",IDC_STATIC,574,191,47,9
+END
+
+IDD_CAMERA_CALIBRATION DIALOGEX 0, 0, 260, 415
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Camera Calibration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_FC1_X,69,217,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC1_Y,149,217,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC2_X,69,231,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC2_Y,149,231,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC3_X,69,244,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC3_Y,149,244,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC4_X,69,257,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC4_Y,149,257,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC5_X,69,270,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC5_Y,149,270,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC6_X,69,283,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC6_Y,149,283,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC7_X,69,296,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC7_Y,149,296,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC8_X,69,309,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC8_Y,149,309,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PPA_X,69,340,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PPA_Y,149,340,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PPS_X,69,370,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PPS_Y,149,370,58,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Save",ID_CALIBRATION_SAVE,82,394,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,394,50,14
+    CONTROL         136,IDC_STATIC,"Static",SS_BITMAP,46,11,165,152
+    CTEXT           "Fiducial coordinates",IDC_STATIC,48,174,164,10
+    CTEXT           "( referred to central cross FC )",IDC_STATIC,48,185,164,
+                    10
+    GROUPBOX        "",IDC_STATIC,13,168,233,29
+    CTEXT           "FD",IDC_STATIC,31,202,28,9
+    CTEXT           "x-coord (mm)",IDC_STATIC,66,202,62,9
+    CTEXT           "y-coord (mm)",IDC_STATIC,148,202,62,9
+    CTEXT           "1",IDC_STATIC,31,219,28,9
+    CTEXT           "2",IDC_STATIC,31,232,28,10
+    CTEXT           "3",IDC_STATIC,31,246,28,8
+    CTEXT           "4",IDC_STATIC,31,258,28,10
+    CTEXT           "5",IDC_STATIC,31,272,28,8
+    CTEXT           "6",IDC_STATIC,30,285,28,9
+    CTEXT           "7",IDC_STATIC,30,297,28,9
+    CTEXT           "8",IDC_STATIC,30,311,28,9
+    GROUPBOX        "",IDC_STATIC,13,192,233,134
+    CTEXT           "PPA",IDC_STATIC,29,341,28,9
+    CTEXT           "Principal point of autocollimation",IDC_STATIC,32,328,
+                    198,8
+    CTEXT           "PPS",IDC_STATIC,29,371,28,9
+    CTEXT           "Principal point of symmetry",IDC_STATIC,31,358,198,8
+    GROUPBOX        "",IDC_STATIC,13,322,233,36
+    GROUPBOX        "",IDC_STATIC,13,354,233,36
+END
+
+IDD_RMSE DIALOGEX 0, 0, 603, 358
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Result - Fiducial Marks Comparison and Residuals"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,481,209,50,14
+    CONTROL         136,IDC_STATIC,"Static",SS_BITMAP | SS_RIGHTJUST,19,37,
+                    165,152
+    CTEXT           "Calibration Data",IDC_STATIC,20,18,163,15
+    EDITTEXT        IDC_FC1_X,46,241,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC1_Y,126,241,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC2_X,46,255,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC2_Y,126,255,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC3_X,46,268,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC3_Y,126,268,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC4_X,46,281,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC4_Y,126,281,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC5_X,46,294,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC5_Y,126,294,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC6_X,46,307,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC6_Y,126,307,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC7_X,46,320,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC7_Y,126,320,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC8_X,46,333,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FC8_Y,126,333,58,12,ES_AUTOHSCROLL
+    CTEXT           "Fiducial coordinates",IDC_STATIC,25,198,164,10
+    CTEXT           "( referred to central cross FC )",IDC_STATIC,25,209,164,
+                    10
+    GROUPBOX        "",IDC_STATIC,10,192,184,29
+    CTEXT           "FD",IDC_STATIC,8,226,28,9
+    CTEXT           "x-coord (mm)",IDC_STATIC,43,226,62,9
+    CTEXT           "y-coord (mm)",IDC_STATIC,125,226,62,9
+    CTEXT           "1",IDC_STATIC,8,243,28,9
+    CTEXT           "2",IDC_STATIC,8,256,28,10
+    CTEXT           "3",IDC_STATIC,8,270,28,8
+    CTEXT           "4",IDC_STATIC,8,282,28,10
+    CTEXT           "5",IDC_STATIC,8,296,28,8
+    CTEXT           "6",IDC_STATIC,7,309,28,9
+    CTEXT           "7",IDC_STATIC,7,321,28,9
+    CTEXT           "8",IDC_STATIC,7,335,28,9
+    GROUPBOX        "",IDC_STATIC,10,216,184,134
+    GROUPBOX        "",IDC_STATIC,10,7,184,190
+    CTEXT           "Image Matching Result",IDC_STATIC,218,18,163,15
+    EDITTEXT        IDC_MFC1_X,244,241,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC1_Y,324,241,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC2_X,244,254,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC2_Y,324,254,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC3_X,244,268,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC3_Y,324,268,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC4_X,244,281,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC4_Y,324,281,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC5_X,244,294,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC5_Y,324,294,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC6_X,244,307,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC6_Y,324,307,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC7_X,244,320,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC7_Y,324,320,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFC8_X,244,333,58,12,ES_AUTOHSCROLL
+    CTEXT           "Matching coordinates",IDC_STATIC,224,198,164,10
+    CTEXT           "( referred to central cross FC )",IDC_STATIC,218,209,
+                    164,10
+    GROUPBOX        "",IDC_STATIC,208,192,184,29
+    LTEXT           "FD",IDC_STATIC,217,225,13,9
+    CTEXT           "x-coord (mm)",IDC_STATIC,242,225,62,9
+    CTEXT           "y-coord (mm)",IDC_STATIC,324,225,62,9
+    LTEXT           "1",IDC_STATIC,217,243,13,9
+    LTEXT           "2",IDC_STATIC,217,256,15,10
+    LTEXT           "3",IDC_STATIC,217,270,16,8
+    LTEXT           "4",IDC_STATIC,217,281,14,10
+    LTEXT           "5",IDC_STATIC,217,296,16,8
+    LTEXT           "6",IDC_STATIC,217,309,16,9
+    LTEXT           "7",IDC_STATIC,217,321,18,9
+    LTEXT           "8",IDC_STATIC,217,334,18,9
+    GROUPBOX        "",IDC_STATIC,208,216,184,134
+    GROUPBOX        "",IDC_STATIC,208,7,184,190
+    CTEXT           "Accuracy",IDC_STATIC,448,18,99,10
+    CONTROL         144,IDC_STATIC,"Static",SS_BITMAP,449,37,100,93,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_RMSE_X,491,148,88,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RMSE_Y,491,161,88,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RMSE_AVG,491,175,88,12,ES_AUTOHSCROLL
+    RTEXT           "RMSE in X Coord (mm)",IDC_STATIC,410,150,76,9
+    CONTROL         136,IDC_STATIC,"Static",SS_BITMAP | SS_RIGHTJUST,218,37,
+                    165,152
+    RTEXT           "RMSE in Y Coord (mm)",IDC_STATIC,410,163,76,9
+    RTEXT           "Average RMSE (mm)",IDC_STATIC,411,176,76,9
+    GROUPBOX        "",IDC_STATIC,405,7,188,136
+    GROUPBOX        "",IDC_STATIC,405,138,188,58
+    EDITTEXT        IDC_MFC8_Y,324,333,58,12,ES_AUTOHSCROLL
+END
+
+IDD_AFFINE_PARAMETERS DIALOGEX 0, 0, 229, 233
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Result - Affine Transformation Calculation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,91,212,50,14
+    CTEXT           "Affine Transformation Parameters",IDC_STATIC,33,95,163,
+                    15
+    CTEXT           "Affine Transformation Calculation",IDC_STATIC,32,16,163,
+                    15
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,24,34,179,50,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_A11,63,118,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A12,63,131,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A21,63,145,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A22,63,158,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_XT,63,171,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YT,63,184,122,12,ES_AUTOHSCROLL
+    CTEXT           "a11",IDC_STATIC,30,120,28,9
+    CTEXT           "a12",IDC_STATIC,30,133,28,9
+    CTEXT           "a21",IDC_STATIC,30,146,28,8
+    CTEXT           "a22",IDC_STATIC,30,159,28,10
+    CTEXT           "Xt",IDC_STATIC,30,173,28,8
+    CTEXT           "Yt",IDC_STATIC,30,185,28,9
+    GROUPBOX        "",IDC_STATIC,7,7,214,84
+    GROUPBOX        "",IDC_STATIC,7,87,214,23
+    GROUPBOX        "",IDC_STATIC,7,105,214,100
+END
+
+IDD_PROCESS_SUMMARY DIALOGEX 0, 0, 255, 209
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Result - Process Summary"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,101,188,50,14
+    GROUPBOX        "Accuracy",IDC_STATIC,7,62,241,62
+    RTEXT           "RMSE in X-Coordinate (mm) :",IDC_STATIC,20,78,109,11
+    LTEXT           "No information",IDC_TEXT_RMSE_X,142,78,76,11
+    RTEXT           "RMSE in Y-Coordinate (mm) :",IDC_STATIC,24,93,105,11
+    LTEXT           "No information",IDC_TEXT_RMSE_Y,142,93,76,11
+    RTEXT           "Average RMSE (mm) :",IDC_STATIC,33,107,96,12
+    LTEXT           "No information",IDC_TEXT_RMSE_AVG,142,107,76,11
+    GROUPBOX        "General Information",IDC_STATIC,7,9,241,47
+    RTEXT           "Image Dimension :",IDC_STATIC,53,25,76,11
+    RTEXT           "Template Dimension :",IDC_STATIC,53,39,76,11
+    LTEXT           "No information",IDC_TEXT_IMAGE_DIM,142,25,76,11
+    LTEXT           "No information",IDC_TEXT_TEMP_DIM,142,39,76,11
+    GROUPBOX        "Computation",IDC_STATIC,7,130,241,48
+    RTEXT           "Computational Time (second) :",IDC_STATIC,15,146,114,11
+    LTEXT           "No information",IDC_TEXT_COMP_TIME,142,146,76,11
+    RTEXT           "Number of CC Operations :",IDC_STATIC,33,161,96,12
+    LTEXT           "No information",IDC_TEXT_CC_OPERATIONS,142,161,76,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "This application is submitted as a partial requirement for the Advance Digital Photogrammetry class."
+            VALUE "CompanyName", "The University of Seoul, Laboratory for Sensor and Modeling, Supannee Tanathong"
+            VALUE "FileDescription", "Fiducial Mark Locator"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "FiducialMarkProject.exe"
+            VALUE "LegalCopyright", "(c) LSM.  All rights reserved."
+            VALUE "OriginalFilename", "FiducialMarkProject.exe"
+            VALUE "ProductName", "Fiducial Mark Locator"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_FORMTEMPLATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 350
+    END
+
+    IDD_TEMPLATE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_DLG_RESULT_MATCHING_POSITION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 636
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 386
+    END
+
+    IDD_CAMERA_CALIBRATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 408
+    END
+
+    IDD_RMSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 596
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 351
+    END
+
+    IDD_AFFINE_PARAMETERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_PROCESS_SUMMARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Fiducial Mark Locator"
+    IDR_FMLocatorTYPE       "\nFMLocator\nFM\n\n\nFiducialMarkProject.Document\nFMLocator.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "FiducialMarkProject"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\FiducialMarkProject.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
